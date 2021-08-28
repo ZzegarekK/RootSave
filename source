@@ -103,7 +103,6 @@ if _G.prelaunched == nil then -- _G = getgenv()
 	end)
 	
 	flyKeyUp = mouse.KeyUp:Connect(function(key)
-		print(key)
 		if key:lower() == 'w' then
 			control.F = 0
 		elseif key:lower() == 's' then
