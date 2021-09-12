@@ -96,7 +96,7 @@ if _G.prelaunched == nil then -- _G = getgenv()
 			control.R = (flyspeed)
 		elseif key:lower() == ' ' then
 			control.Q = (flyspeed)*3
-		elseif key:lower(lctrl) then
+		elseif key:lower() == 'q' then
 			control.E = -(flyspeed)*3
 		end
 		pcall(function() workspace.CurrentCamera.CameraType = Enum.CameraType.Track end)
