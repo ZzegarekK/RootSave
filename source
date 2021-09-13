@@ -180,7 +180,8 @@ if _G.active == nil then -- _G = getgenv()
 	_G.active = true -- _G = getgenv()
 
 	local main = Instance.new("ScreenGui",gui)
-
+	main.ResetOnSpawn = false
+	
 	local open = Instance.new("ImageButton", main)
 	open.Size = UDim2.new(0, 20, 0, 20)
 	open.Position = UDim2.new(0.973, 0, 0.962, 0)
